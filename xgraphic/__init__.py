@@ -24,7 +24,6 @@ def resource_copy(resource, dest):
 
 def to_nvidia():
     check_etc_folder()
-    resource_copy("xorg.conf", "/etc/X11/xorg.conf")
     resource_copy("nvidia.conf", "/usr/lib/modprobe.d/nvidia.conf")
     resource_copy("60-xgraphic-nvidia.sh", "/etc/X11/xinit/xinitrc.d/60-xgraphic-nvidia.sh")
 
